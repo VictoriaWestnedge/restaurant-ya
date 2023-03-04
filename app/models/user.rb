@@ -6,4 +6,7 @@ class User < ApplicationRecord
   # Active Record
   has_one_attached :photo
 
+  # Assocation:
+  has_many :restaurants
+
 end
