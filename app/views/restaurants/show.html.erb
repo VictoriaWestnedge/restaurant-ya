@@ -1,0 +1,12 @@
+<div class="container w-50">
+  <div class="card-show bg-light mb-3 mt-5 text-center pb-5">
+    <% @restaurant.foods.each do |food| %>
+    <%= image_tag food.photo, :size => "500x400" %>
+    <div class="card-show-body">
+      <h5 class="card-show-title"><h2><%= food.name %></h2></p>
+      <p class="card-show-text"> <h5><%= food.description %></h5>
+      <p class="card-show-text"><%= number_to_currency(food.price) %></p>
+      <% end %>
+    </div>
+  </div>
+ </div>
